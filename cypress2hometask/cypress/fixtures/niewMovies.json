@@ -1,0 +1,20 @@
+ [
+     { "hallTitle" : "Hercules", "movie" : "Sherlock Holmes", "price": 230},
+    
+     {"hallTitle" : "Leon", "movie" : "Lion King", "price": 250 },
+
+   {"createHall": "button.conf-step__button conf-step__button-accent button__add-hall"},
+ 
+  {"hallInput": "input.conf-step__input[0]"},
+
+ {"submitButton:"  :"input.conf-step__button.conf-step__button-accent[0]"}, 
+
+ {"button" : "input.conf-step__button.conf-step__button-accent[1]"},
+
+{"addMovie":"button.conf-step__button.conf-step__button-accent.button__add-movie"}
+
+
+
+
+
+ ]

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "js-file-downloader": "^1.1.22",
+    "node-base64-image": "^1.0.7"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.0.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}
