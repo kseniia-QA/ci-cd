@@ -1,6 +1,0 @@
-ru/netology/web/CardOrderTest.java
- ru.netology.web.CardOrderTest
-ru/netology/web/DataGenerator.java
- ru.netology.web.DataGenerator
- ru.netology.web.DataGenerator$Registration
- ru.netology.web.DataGenerator$User
