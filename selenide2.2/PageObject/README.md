@@ -1,1 +1,0 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/ua90g6d830h9h1dj?svg=true)](https://ci.appveyor.com/project/kseniia/objectpage)
