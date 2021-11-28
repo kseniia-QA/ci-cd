@@ -29,7 +29,7 @@ movies.forEach(movie => {
     cy.get('button.conf-step__button.conf-step__button-accent.button__add-hall').click()
     cy.wait(500)
     cy.get('input.conf-step__input').eq(0).type(movie.hallTitle)
-    cy.get('input.conf-step__button.conf-step__button-accent').eq(0).click()
+    cy.get('input[data-event="hall_add"]').click()
     cy.wait(1000)
     cy.get('input.conf-step__radio').eq(9).click().click()
     cy.wait(800)
@@ -50,7 +50,7 @@ movies.forEach(movie => {
 })
 })
 
-
+ 
 describe('another test without failing', () => {
 it('Checks manager can create a hall with session price. ', () => {   //positive test
     
@@ -63,16 +63,16 @@ movies.forEach(movie => {
       movie.movie;
       movie.price;
 
-      cy.get('button.conf-step__button.conf-step__button-accent.button__add-hall').click()
-      cy.wait(500)
-      cy.get('input.conf-step__input').eq(0).type(movie.hallTitle)
-      cy.get('input.conf-step__button.conf-step__button-accent').eq(0).click()
+      // cy.get('button.conf-step__button.conf-step__button-accent.button__add-hall').click()
+      // cy.wait(500)
+      // cy.get('input.conf-step__input').eq(0).type(movie.hallTitle)
+      // cy.get('input.conf-step__button.conf-step__button-accent').eq(0).click()
       cy.wait(1000)
       cy.get('input.conf-step__radio').eq(9).click().click()
       cy.wait(800)
      cy.get('input.conf-step__input').eq(2).clear().type(movie.price)
 
-//      cy.get('h3.conf-step__movie-title').eq(1).drag('div.conf-step__seances-timeline', { smooth: true }).eq(2)
+     cy.get('h3.conf-step__movie-title').eq(1).drag('div.conf-step__seances-timeline', { smooth: true }).eq(2)
      cy.get('input[type="time"]').click()
      cy.get('input[data-event="seance_add"]').click()
   

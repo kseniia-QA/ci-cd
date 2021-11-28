@@ -1,10 +1,31 @@
+
+
 {
-  "dependencies": {
-    "js-file-downloader": "^1.1.22",
-    "node-base64-image": "^1.0.7"
-  },
-  "devDependencies": {
-    "@4tw/cypress-drag-drop": "^2.0.0",
-    "cypress-file-upload": "^5.0.8"
+  "name": "jsaqa_3_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:dashboard" : "cypress run --record --key 4dc648ef-311f-4500-ac6a-68959ea0cfd5",
+"cy:spec1": "cypress run --spec 'cypress/integration/Api.spec.js' --record --key 4dc648ef-311f-4500-ac6a-68959ea0cfd5",
+"cy:spec2": "cypress run --spec 'cypress/integration/login.spec.js' --record --key 4dc648ef-311f-4500-ac6a-68959ea0cfd5",
+"cy:parallel": "npm run cy:spec1 -- --browser chrome --group Spec1 --ci-build-id 3 & npm run cy:spec2 -- --browser chrome --group Spec2 --ci-build-id 3",
+"cy:parallel-firefox": "npm run cy:spec1 -- --browser firefox --group Spec1 --ci-build-id 3 & npm run cy:spec2 -- --browser firefox --group Spec2 --ci-build-id 3",
+"cy:parallel-opera": "npm run cy:spec1 -- --browser opera --group Spec1 --ci-build-id 3 & npm run cy:spec2 -- --browser opera --group Spec2 --ci-build-id 3",
+"cy:parallel-Safari": "npm run cy:spec1 -- --browser safari --group Spec1 --ci-build-id 3 & npm run cy:spec2 -- --browser safari --group Spec2 --ci-build-id 3"
+ 
+// "cy:api" : "cypress run --spec 'cypress/integration/Api/Api.spec.js' --record --key 4dc648ef-311f-4500-ac6a-68959ea0cfd5",
+// "cy-login": "cypress run --spec 'cypress/integration/login/login.spec.js' --record --key 4dc648ef-311f-4500-ac6a-68959ea0cfd5",
+// "cy:parallel": "npm run cy:api -- --browser chrome --group api --ci-build-id1 & npm run cy:login -- --browser chrome --group api --ci-build-id1",
+
+
+},
+  
+    "dependencies": {
+      "js-file-downloader": "^1.1.22",
+      "node-base64-image": "^1.0.7"
+    },
+    "devDependencies": {
+      "cypress-file-upload": "^5.0.8"
+    }
   }
-}
